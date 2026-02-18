@@ -1,0 +1,31 @@
+baseURL = "http://localhost:1313/"
+languageCode = "en-us"
+title = "MaxLiv TV"
+
+# Leave empty if you are not using a theme
+theme = ""
+
+enableRobotsTXT = true
+
+[permalinks]
+  faqs = "/faqs/"
+  blog = "/blog/"
+  download-maxliv-tv = "/download-maxliv-tv/"
+
+[params]
+description = "Your site description"
+keywords = ["keyword1", "keyword2"]
+author = "Your Name"
+og_image = "/images/og-default.jpg"
+favicon = "/favicon.ico"
+apple_touch_icon = "/apple-touch-icon.png"
+theme_color = "#ffffff"
+twitter_site = "yourhandle"
+
+
+[menu]
+
+  [[menu.main]]
+  name = "Blog"
+  url = "/blog/"
+  weight = 3

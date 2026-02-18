@@ -1,0 +1,117 @@
+/* --- Base Footer Styles --- */
+footer {
+    position: relative;
+    background: rgba(255, 255, 255, 0.9);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border-top: 1px solid rgba(0, 0, 0, 0.05);
+    padding: 4rem 1rem 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+}
+
+/* --- The Container --- */
+.max-w-7xl {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    z-index: 1;
+}
+
+/* --- Centered Navigation Grid --- */
+footer ul {
+    display: grid;
+    /* Desktop: 4 columns | Mobile: 2 columns */
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 12px;
+    width: 100%;
+    max-width: 500px; /* Limits width on mobile for better look */
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+@media (min-width: 768px) {
+    footer ul {
+        grid-template-columns: repeat(4, auto);
+        justify-content: center;
+    }
+}
+
+/* --- Modern Mobile Buttons --- */
+footer ul li a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 14px 10px;
+    font-size: 0.8rem;
+    font-weight: 700;
+    color: #475569;
+    background: white;
+    border: 1px solid #f1f5f9;
+    border-radius: 16px;
+    text-decoration: none;
+    text-align: center;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+}
+
+footer ul li a:active {
+    transform: scale(0.95);
+    background: #f8fafc;
+}
+
+@media (min-width: 768px) {
+    footer ul li a:hover {
+        color: #2563eb !important;
+        border-color: #2563eb;
+        transform: translateY(-5px);
+        box-shadow: 0 10px 20px rgba(37, 99, 235, 0.1);
+    }
+}
+
+/* --- Central Divider --- */
+.w-16.h-1 {
+    width: 40px;
+    height: 4px;
+    background: linear-gradient(90deg, #2563eb, #a855f7);
+    border-radius: 10px;
+    margin: 1rem 0;
+}
+
+/* --- Copyright Section --- */
+.text-center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+}
+
+.text-gray-500 {
+    font-size: 0.75rem;
+    letter-spacing: 0.05em;
+    color: #94a3b8;
+}
+
+.text-blue-600.font-bold {
+    background: linear-gradient(90deg, #2563eb, #a855f7);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    font-size: 0.9rem;
+}
+
+/* --- Decorative Mobile Glow --- */
+footer::after {
+    content: "";
+    position: absolute;
+    bottom: -50px;
+    width: 200px;
+    height: 200px;
+    background: radial-gradient(circle, rgba(168, 85, 247, 0.08) 0%, transparent 70%);
+    z-index: 0;
+}

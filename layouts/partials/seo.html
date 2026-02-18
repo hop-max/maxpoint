@@ -1,0 +1,86 @@
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>
+  {{ if .Params.title }}
+    {{ .Params.title }} | {{ .Site.Title }}
+  {{ else }}
+    {{ .Site.Title }}
+  {{ end }}
+</title>
+
+{{/* Description */}}
+{{ with .Params.description }}
+<meta name="description" content="{{ . }}">
+{{ else with .Site.Params.description }}
+<meta name="description" content="{{ . }}">
+{{ end }}
+
+{{/* Keywords */}}
+{{ with .Params.keywords }}
+<meta name="keywords" content="{{ delimit . ", " }}">
+{{ else with .Site.Params.keywords }}
+<meta name="keywords" content="{{ delimit . ", " }}">
+{{ end }}
+
+{{/* Author */}}
+{{ with .Params.author }}
+<meta name="author" content="{{ . }}">
+{{ else with .Site.Params.author }}
+<meta name="author" content="{{ . }}">
+{{ end }}
+
+<meta name="robots" content="{{ .Params.robots | default "index, follow" }}">
+<meta name="googlebot" content="{{ .Params.googlebot | default "index, follow" }}">
+
+<link rel="canonical" href="{{ .Permalink }}">
+<meta http-equiv="content-language" content="{{ .Site.LanguageCode | default "en" }}">
+
+<!-- Open Graph -->
+<meta property="og:title" content="{{ .Params.og_title | default .Params.title | default .Site.Title }}">
+<meta property="og:description" content="{{ .Params.og_description | default .Params.description | default .Site.Params.description }}">
+<meta property="og:type" content="{{ if .IsPage }}article{{ else }}website{{ end }}">
+<meta property="og:url" content="{{ .Permalink }}">
+<meta property="og:image" content="{{ with .Params.og_image }}{{ . | absURL }}{{ else }}{{ .Site.Params.og_image | absURL }}{{ end }}">
+<meta property="og:site_name" content="{{ .Site.Title }}">
+
+{{ if .IsPage }}
+<meta property="article:author" content="{{ .Params.author | default .Site.Params.author }}">
+<meta property="article:published_time" content="{{ .PublishDate.Format "2006-01-02T15:04:05Z07:00" }}">
+<meta property="article:modified_time" content="{{ .Lastmod.Format "2006-01-02T15:04:05Z07:00" }}">
+{{ end }}
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="{{ .Params.twitter_card | default "summary_large_image" }}">
+<meta name="twitter:title" content="{{ .Params.twitter_title | default .Params.title | default .Site.Title }}">
+<meta name="twitter:description" content="{{ .Params.twitter_description | default .Params.description | default .Site.Params.description }}">
+<meta name="twitter:image" content="{{ with .Params.twitter_image }}{{ . | absURL }}{{ else }}{{ .Site.Params.og_image | absURL }}{{ end }}">
+{{ with .Site.Params.twitter_site }}
+<meta name="twitter:site" content="@{{ . }}">
+{{ end }}
+
+<!-- Icons -->
+<link rel="icon" href="{{ .Site.Params.favicon | default "/favicon.ico" }}">
+<link rel="apple-touch-icon" href="{{ .Site.Params.apple_touch_icon }}">
+
+<!-- SEO Discovery -->
+<link rel="sitemap" type="application/xml" href="{{ "sitemap.xml" | absURL }}">
+{{ with .OutputFormats.Get "RSS" }}
+<link rel="alternate" type="application/rss+xml" href="{{ .RelPermalink }}" title="{{ $.Site.Title }}">
+{{ end }}
+
+<!-- Performance -->
+<link href="https://unpkg.com/tailwindcss@3.3.4/dist/tailwind.min.css" rel="stylesheet">
+
+<meta name="theme-color" content="{{ .Site.Params.theme_color | default "#ffffff" }}">
+
+<!-- Tailwind -->
+<script src="https://cdn.tailwindcss.com"></script>
+
+
+<!-- Structured Data -->
+{{ if .Params.schema }}
+<script type="application/ld+json">
+{{ .Params.schema | safeJS }}
+</script>
+{{ end }}

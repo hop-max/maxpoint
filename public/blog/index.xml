@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Blog on MaxLiv TV</title>
+    <link>http://localhost:1313/blog/</link>
+    <description>Recent content in Blog on MaxLiv TV</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 18 Feb 2026 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/blog/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>DMCA Policy</title>
+      <link>http://localhost:1313/blog/dmca-policy/</link>
+      <pubDate>Wed, 18 Feb 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/blog/dmca-policy/</guid>
+      <description>&lt;h1 id=&#34;dmca-policy&#34;&gt;DMCA Policy&lt;/h1&gt;&#xA;&lt;p&gt;At &lt;strong&gt;Apk.MaxLiv.top&lt;/strong&gt;, we respect the intellectual property rights of content owners and follow the provisions of the &lt;strong&gt;Digital Millennium Copyright Act (DMCA)&lt;/strong&gt;.&lt;br&gt;&#xA;If you believe any material available on this website infringes your copyright, please notify us using the procedure outlined below.&lt;/p&gt;&#xA;&lt;h2 id=&#34;1-ownership-of-content&#34;&gt;1. Ownership of Content&lt;/h2&gt;&#xA;&lt;p&gt;All logos, brand names, images, and trademarks referenced on &lt;strong&gt;&lt;a href=&#34;https://apk.maxliv.top/&#34;&gt;Apk.MaxLiv.top&lt;/a&gt;&lt;/strong&gt; belong to their respective owners.&lt;br&gt;&#xA;The information shared on this website is provided for general &lt;strong&gt;educational and informational purposes only&lt;/strong&gt;.&lt;br&gt;&#xA;We do &lt;strong&gt;not&lt;/strong&gt; host APK files, media files, or other copyrighted content on our servers.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Privacy Policy</title>
+      <link>http://localhost:1313/blog/privacy-policy/</link>
+      <pubDate>Wed, 18 Feb 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/blog/privacy-policy/</guid>
+      <description>&lt;h1 id=&#34;privacy-policy&#34;&gt;Privacy Policy&lt;/h1&gt;&#xA;&lt;p&gt;Your privacy matters to us at MaxLiv.Top. We are committed to keeping your information secure, and this Privacy Policy explains how we collect, use, and protect your data when you browse our site.&lt;/p&gt;&#xA;&lt;h3 id=&#34;1-information-we-do-not-collect&#34;&gt;1. Information We Do Not Collect&lt;/h3&gt;&#xA;&lt;p&gt;We do not request or store personal details such as your name, email address, home address, or payment information. This website exists only to share information about the &lt;strong&gt;MaxLiv Tv&lt;/strong&gt;  app, so there is no need for user accounts, registrations, or logins.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Terms &amp; Conditions</title>
+      <link>http://localhost:1313/blog/terms-conditions/</link>
+      <pubDate>Wed, 18 Feb 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/blog/terms-conditions/</guid>
+      <description>&lt;h1 id=&#34;welcome-to-maxlivtop&#34;&gt;Welcome to MaxLiv.top&lt;/h1&gt;&#xA;&lt;p&gt;By accessing this website, you agree to comply with the terms outlined below. Please review them carefully before continuing to browse or use our site.&lt;/p&gt;&#xA;&lt;h2 id=&#34;1-website-purpose&#34;&gt;1. Website Purpose&lt;/h2&gt;&#xA;&lt;p&gt;&lt;strong&gt;MaxLiv.top&lt;/strong&gt; is an independent informational platform that shares news, guides, and updates related to the MaxLiv TV application. We do &lt;strong&gt;not&lt;/strong&gt; develop, own, host, or distribute any APK files. All material on this site is provided strictly for informational and educational use.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

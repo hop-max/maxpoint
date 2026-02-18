@@ -1,0 +1,52 @@
+baseURL = "https://apk.maxliv.top/"
+languageCode = "en-us"
+title = "MaxLiv TV"
+enableRobotsTXT = true
+uglyURLs = false
+
+# Sitemap
+[sitemap]
+  changefreq = "weekly"
+  priority = 0.7
+  filename = "sitemap.xml"
+
+# Output formats
+[outputs]
+  home = ["HTML", "RSS"]
+  section = ["HTML", "RSS"]
+  taxonomy = ["HTML"]
+  term = ["HTML"]
+
+# SEO defaults
+[params]
+  description = "MaxLiv TV APK download for Android, Firestick, and Smart TVs. Watch live sports, cricket, football, and movies in HD with no subscription."
+  keywords = [
+    "MaxLiv TV",
+    "MaxLiv TV APK",
+    "Live Sports Streaming",
+    "Cricket Live",
+    "Football Streaming",
+    "Android TV App",
+    "Firestick APK"
+  ]
+  author = "MaxLiv Team"
+
+  favicon = "/favicon.ico"
+  apple_touch_icon = "/apple-touch-icon.png"
+  theme_color = "#0f172a"
+
+  og_image = "/images/og-default.jpg"
+  twitter_site = "maxlivtv"
+
+[permalinks]
+  blog = "/blog/:slug/"
+  faqs = "/faqs/"
+  download-maxliv-tv = "/download-maxliv-tv/"
+  contact = "/contact/"
+
+
+# Taxonomies
+[taxonomies]
+  category = "categories"
+  tag = "tags"
+
