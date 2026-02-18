@@ -12,7 +12,7 @@ uglyURLs = false
 
 # Output formats
 [outputs]
-  home = ["HTML", "RSS"]
+  home = ["HTML", "RSS", "RobotsTXT"]
   section = ["HTML", "RSS"]
   taxonomy = ["HTML"]
   term = ["HTML"]
